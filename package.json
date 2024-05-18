@@ -1,0 +1,14 @@
+{
+  "name": "sanber56-cypress-kelompok-16",
+  "version": "1.0.0",
+  "description": "Kelompok 16 Cypress Sanber56",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kelompok 16",
+  "license": "ISC",
+  "devDependencies": {
+    "cypress": "^13.9.0"
+  }
+}
