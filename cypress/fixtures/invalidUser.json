@@ -1,0 +1,9 @@
+{
+    "invalidUser": {
+      "firstName": "12345",
+      "lastName": "!@#$%",
+      "email": "plainaddress",
+      "password": "P@ss"
+    }
+  }
+  
