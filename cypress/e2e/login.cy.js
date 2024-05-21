@@ -1,7 +1,7 @@
 describe('Magento Demo Site - Login', () => {
     beforeEach(() => {
       cy.visit('/');
-      cy.get('.header .authorization-link').click(); // Click on the 'Sign In' link
+      cy.get('.panel > .header > .authorization-link > a').click(); // Click on the 'Sign In' link
     });
   
     it('Logs in with valid credentials', () => {
@@ -66,7 +66,7 @@ describe('Magento Demo Site - Login', () => {
   
       cy.get('#email').type(username);
       cy.get('#send2').click();
-      cy.get('#pass-error').should('contain', 'This is a required field.');
+      cy.get('.message-error > div').should('contain', 'This is a required field.');
     });
   });
   
