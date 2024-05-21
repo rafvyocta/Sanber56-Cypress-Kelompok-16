@@ -11,5 +11,5 @@ module.exports = defineConfig({
     username: 'kelompok16@sanber.com', 
     password: 'Sanbercode56'  
   },
-  defaultCommandTimeout: 10000
+  defaultCommandTimeout : 4000
 });

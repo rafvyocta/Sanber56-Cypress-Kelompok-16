@@ -54,7 +54,7 @@ describe('Magento Demo Site - Login', () => {
   
       cy.get('#pass').type(password);
       cy.get('#send2').click();
-      cy.get('#email-error').should('contain', 'This is a required field.');
+      cy.get('.fieldset').should('contain', 'This is a required field.');
     });
   
     it('Displays validation error for empty password', () => {
@@ -66,7 +66,7 @@ describe('Magento Demo Site - Login', () => {
   
       cy.get('#email').type(username);
       cy.get('#send2').click();
-      cy.get('.message-error > div').should('contain', 'This is a required field.');
+      cy.get('#pass-error').should('contain', 'This is a required field.');
     });
   });
   
